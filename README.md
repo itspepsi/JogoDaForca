@@ -30,7 +30,7 @@ A ONE me desafiou a construir um Jogo da Forca. Esse projeto foi construido com 
 
 ### <b>Como funciona?</b>
 
-Essa aplicação funciona apenas em desktop. Quando o usuário clica em <b>"Começar o Jogo"<b> ele é direcionado para a tela seguinte e basta começar adivinhar a palavra utilizando o teclado.
+Essa aplicação funciona apenas em desktop. Quando o usuário clica em <b>"Começar o Jogo"<b> ele é direcionado para a tela seguinte e basta adivinhar a palavra utilizando o teclado.
 
 
 #### Dica: As palavras são relacionadas a TECNOLOGIA :grinning:
