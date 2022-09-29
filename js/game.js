@@ -24,7 +24,6 @@ function reconhecendoDigito() {
         console.log(letra)
         console.log(codigoTeclado)
         titulo.style.display = "none"
-            //letra faz parte da palavra?
         if (letrasErradas.includes(letra)) {
             letraRepetida()
         } else {
@@ -63,10 +62,6 @@ function mostrarLetrasCertas() {
             palavraCorreta.innerHTML += `<span>_<span>`
         }
     })
-}
-
-function letraRepetida() {
-    console.log("Você já utilizou essa letra!")
 }
 
 function isLetra(codigoTeclado) {
