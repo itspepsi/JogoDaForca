@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: var(--cor-fundo);
+}
+
+:root {
+    --cor-fundo: #f3f5fc;
+    --cor-botaoCinza: #d8dfe8;
+    --cor-azulEscuro: #0A3871;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.letras-erradas {
+    font-size: 30px;
+    color: var(--cor-azulEscuro);
+
+}
+
+.links a {
+    text-decoration-line: none
+}
+
+header {
+    margin: 15px 0;
+}
+
+.logo {
+    width: 30px;
+    margin-right: 5px;
+}
+
+h1 {
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: var(--cor-azulEscuro)
+}
+
+button {
+    border-radius: 20px;
+    height: 50px;
+    width: 260px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    transform: scale(1.0);
+    background: #2c4462;
+}
+
+#btnInicio {
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin: 100px auto;
+}
+
+#comecarJogo {
+    height: 80px;
+    display: block;
+    border-radius: 20px;
+
+    display: inline;
+    position: absolute;
+    margin-top: 150px;
+}
+
+.btn-principal {
+    background: var(--cor-azulEscuro);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    border: 1px solid var(--cor-azulEscuro);
+    font-weight: 500;
+}
+
+.btn-secundario:hover {
+    transform: scale(1.0);
+    background: #2c4462;
+    color: #f3f5fc;
+}
+
+
+.botoes {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.palavra-secreta {
+    color: var(--cor-azulEscuro);
+    font-size: 40px;
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+.letras-erradas {
+    color: #e35656;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.palavras {
+    margin-bottom: 5px;
+}
+
+canvas {
+    margin-bottom: 20px;
+    float: left;
+    width: 350px;
+    height: 300px;
+}
+
+section {
+    display: none;
+}
+
+.github {
+    display: inline;
+    position: absolute;
+    margin: 10px;
+    max-width: 150px;
+    max-height: 45px;
+    bottom: 0;
+    left: 700px;
+
+}
+
+.in {
+    display: inline;
+    position: absolute;
+    margin: 10px;
+    max-width: 150px;
+    max-height: 45px;
+    bottom: 0;
+    left: 750px;
+
+}
+
+@media (max-width: 812px) {
+    .logo {
+        display: inline;
+        position: absolute;
+        padding: 30px;
+        left: 10px;
+        top: 10px;
+
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-principal {
+        display: inline;
+        position: relative;
+        margin-left: 5px;
+        top: 200px;
+    }
+
+    canvas {
+        display: inline;
+        position: relative;
+        top: 50px;
+        padding: 50px;
+        
+    }
+
+    #novoJogo {
+        display: inline;
+        position: relative;
+        font-weight: 500;
+        margin-left: 40px;
+        top: 50px;
+    }
+
+    .btn-secundario {
+        display: inline;
+        position: relative;
+        font-weight: 500;
+        margin-left: 40px;
+        top: 40px;
+
+    }
+
+    .palavra-secreta {
+        display: inline;
+        position: relative;
+        margin-left: 40px;
+        font-size: 25px;
+        top: 10px;
+
+    }
+
+    .letras-erradas {
+        display: flex;
+        font-size: 20px;
+        margin-top: 22px;
+        margin-left: 38px;
+    }
+
+    .github {
+        display: inline-block;
+        position: absolute;
+        top: 750px;
+        left: 130px;
+        max-width: 50px;
+    }
+        
+    .in {
+        display: inline-block;
+        position: absolute;
+        top: 750px;
+        left: 180px;
+        max-width: 50px;
+    }
+}

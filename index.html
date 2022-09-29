@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/gameicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span>
+                <a href="https://www.alura.com.br/"> <img src="img/vector_logo.svg" alt="Logo da Alura"></a>
+            </span>
+            </header>
+            <section id="btnInicio">
+                <button id="comecarJogo" class="btn-principal">Começar o Jogo</button>
+            </section>
+
+            <section class="jogo-da-forca">
+                <main>
+                    <h1>Adivinhe a palavra</h1>
+                    <div class="mensagens">
+                        <canvas width="350px" height="300px"></canvas>
+                        <div class="mensagem">
+                            <h2 class="perdedor"></h2>
+                            <h2 class="vencedor"></h2>
+                        </div>
+                    </div>
+                    <div class="palavras">
+                        <div class="palavra-secreta"></div>
+                        <div class="letras-erradas"></div>
+                    </div>
+                </main>
+                <div class="botoes">
+                    <button id="novoJogo" class="btn-principal" onclick="novoJogo()">Novo Jogo</button>
+                    <button id="desistir" class="btn-secundario" onclick="desistir()">Desistir</button>
+                </div>
+            </section>
+    </div>
+    <footer>
+        <div class="links">
+            <a href="https://github.com/itspepsi" target="_blank"><img class="github" src="img/github.png"></a>
+            <a href="https://www.linkedin.com/in/leonardo-souza-4b478015b/" target="_blank"><img class="in" src="img/linkedin.png"></a>
+        </div>
+    </footer>
+    <script src="js/game.js"></script>
+    <script src="js/forca.js"></script>
+    <script src="js/words.js"></script>
+</body>
+</html>
